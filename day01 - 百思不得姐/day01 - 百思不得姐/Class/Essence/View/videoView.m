@@ -49,8 +49,6 @@
     self.videouri = topics.videouri;
 
 
-
- 
 }
 
 //点击播放视频
@@ -61,6 +59,7 @@
     AVPlayerViewController *player = [[AVPlayerViewController alloc]init];
     
     player.player = [AVPlayer playerWithURL:vURL];
+    
     
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:player animated:YES completion:nil];
     
