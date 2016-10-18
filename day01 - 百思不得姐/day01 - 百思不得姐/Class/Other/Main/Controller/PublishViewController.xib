@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishViewController">
+            <connections>
+                <outlet property="cancelBtn" destination="Twi-xE-R2t" id="HSf-0i-G9s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="429"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-l3-XTf">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="429"/>
+                </imageView>
+                <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twi-xE-R2t">
+                    <rect key="frame" x="45" y="329" width="289" height="40"/>
+                    <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="289" id="Odp-sq-rzf"/>
+                        <constraint firstAttribute="height" constant="40" id="ZNi-AT-YA7"/>
+                    </constraints>
+                    <state key="normal" title="取  消" backgroundImage="login_register_button"/>
+                    <state key="highlighted" backgroundImage="login_register_button_click"/>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="Mxq-u5-MoI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Twi-xE-R2t" secondAttribute="bottom" constant="60" id="Lf7-zk-v3T"/>
+                <constraint firstAttribute="trailing" secondItem="BuL-l3-XTf" secondAttribute="trailing" id="NXm-Aw-J6s"/>
+                <constraint firstItem="BuL-l3-XTf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ay9-fq-MIv"/>
+                <constraint firstItem="BuL-l3-XTf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="f2n-af-pC5"/>
+                <constraint firstAttribute="bottom" secondItem="BuL-l3-XTf" secondAttribute="bottom" id="joE-K6-QmW"/>
+                <constraint firstItem="Twi-xE-R2t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mPB-rC-gjf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="279.5" y="372.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_register_button" width="87" height="40"/>
+        <image name="login_register_button_click" width="87" height="40"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+    </resources>
+</document>

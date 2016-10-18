@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BigPictureViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="442"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXZ-mE-K8B">
+                    <rect key="frame" x="10" y="20" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="UJN-Ny-MI9"/>
+                        <constraint firstAttribute="height" constant="35" id="cwe-kE-urv"/>
+                    </constraints>
+                    <state key="normal" image="show_image_back_icon"/>
+                    <connections>
+                        <action selector="backClick:" destination="-1" eventType="touchUpInside" id="BST-MK-4aX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYS-IL-MPA">
+                    <rect key="frame" x="257" y="392" width="50" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.39926682692307691" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="5Tm-ax-LCU"/>
+                        <constraint firstAttribute="height" constant="25" id="5m3-gE-eJp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="保存"/>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveBigPicture:" destination="-1" eventType="touchUpInside" id="k8p-Qg-1eQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L14-4M-Idt">
+                    <rect key="frame" x="187" y="392" width="50" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.39926682689999998" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="P4V-03-SXF"/>
+                        <constraint firstAttribute="width" constant="50" id="qPW-Gv-3cx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="转发"/>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iXZ-mE-K8B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="1s4-a3-jKB"/>
+                <constraint firstAttribute="trailing" secondItem="iYS-IL-MPA" secondAttribute="trailing" constant="20" id="3aT-Z3-IUQ"/>
+                <constraint firstAttribute="bottom" secondItem="iYS-IL-MPA" secondAttribute="bottom" constant="25" id="4bZ-YO-aEH"/>
+                <constraint firstItem="iYS-IL-MPA" firstAttribute="leading" secondItem="L14-4M-Idt" secondAttribute="trailing" constant="20" id="cfJ-Ja-leC"/>
+                <constraint firstItem="iXZ-mE-K8B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="kfc-4T-rYM"/>
+                <constraint firstItem="L14-4M-Idt" firstAttribute="top" secondItem="iYS-IL-MPA" secondAttribute="top" id="opc-g2-vmM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="276.5" y="370"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

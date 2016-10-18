@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendViewController">
+            <connections>
+                <outlet property="recomendUserView" destination="PFa-OX-cBp" id="TIq-E4-a49"/>
+                <outlet property="recommendTableList" destination="TJW-0K-YsM" id="Lcq-Hh-N9s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJW-0K-YsM">
+                    <rect key="frame" x="-11" y="0.0" width="75" height="600"/>
+                    <color key="backgroundColor" red="0.95826605243161089" green="0.95696001139817632" blue="0.95628324468085102" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="9bz-lP-v5y"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="egt-rr-eeO"/>
+                        <outlet property="delegate" destination="-1" id="f2b-g4-qwb"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-OX-cBp">
+                    <rect key="frame" x="64" y="0.0" width="536" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="drg-KD-XuN"/>
+                        <outlet property="delegate" destination="-1" id="lrp-wL-Vft"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PFa-OX-cBp" secondAttribute="bottom" id="1Dl-zs-uqW"/>
+                <constraint firstItem="TJW-0K-YsM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-11" id="Hqs-Dp-eDi"/>
+                <constraint firstItem="PFa-OX-cBp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KQs-y3-zqA"/>
+                <constraint firstAttribute="trailing" secondItem="PFa-OX-cBp" secondAttribute="trailing" id="VOS-Tk-o4R"/>
+                <constraint firstItem="PFa-OX-cBp" firstAttribute="leading" secondItem="TJW-0K-YsM" secondAttribute="trailing" id="WUd-XJ-r8z"/>
+                <constraint firstItem="TJW-0K-YsM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZGM-fZ-z9u"/>
+                <constraint firstAttribute="bottom" secondItem="TJW-0K-YsM" secondAttribute="bottom" id="hfl-Cx-DBb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

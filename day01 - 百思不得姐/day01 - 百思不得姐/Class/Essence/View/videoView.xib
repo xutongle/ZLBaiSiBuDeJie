@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="videoView">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="310"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y0D-tY-rw2">
+                    <rect key="frame" x="0.0" y="0.0" width="421" height="310"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JU-xl-mFt">
+                    <rect key="frame" x="175" y="120" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="Dfh-So-ALn"/>
+                        <constraint firstAttribute="width" constant="71" id="eq5-2q-09x"/>
+                    </constraints>
+                    <state key="normal" image="video-play"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y0D-tY-rw2" secondAttribute="trailing" id="ILh-Tt-v8x"/>
+                <constraint firstItem="y0D-tY-rw2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iad-pz-ycn"/>
+                <constraint firstAttribute="bottom" secondItem="y0D-tY-rw2" secondAttribute="bottom" id="U4R-F3-JCY"/>
+                <constraint firstItem="y0D-tY-rw2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZiI-OO-EXv"/>
+                <constraint firstItem="9JU-xl-mFt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ezx-Vr-zPi"/>
+                <constraint firstItem="9JU-xl-mFt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="s2r-KD-XXs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="y0D-tY-rw2" id="8dX-a0-taD"/>
+            </connections>
+            <point key="canvasLocation" x="347.5" y="361"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>
