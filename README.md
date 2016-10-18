@@ -8,7 +8,7 @@ ZLBaiSiBuDeJie
 ![image](https://github.com/zhongling6757/ZLBaiSiBuDeJie/blob/master/images/%E9%A6%96%E9%A1%B5.png)<br> 
 新帖: 最新的帖子<br> 
 ![image](https://github.com/zhongling6757/ZLBaiSiBuDeJie/blob/master/images/%E6%96%B0%E5%B8%96.png)<br> 
-关注: 弹出登录界面<br>
+关注: 左上角按钮弹出推荐关注列表，弹出登录界面<br>
 ![image](https://github.com/zhongling6757/ZLBaiSiBuDeJie/blob/master/images/%E5%85%B3%E6%B3%A8.png)<br> 
  我的: 推荐URL(WebView)<br>
 ![image](https://github.com/zhongling6757/ZLBaiSiBuDeJie/blob/master/images/%E6%88%91.png)<br>
