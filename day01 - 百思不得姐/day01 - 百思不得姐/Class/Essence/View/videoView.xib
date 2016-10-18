@@ -21,6 +21,9 @@
                         <constraint firstAttribute="width" constant="71" id="eq5-2q-09x"/>
                     </constraints>
                     <state key="normal" image="video-play"/>
+                    <connections>
+                        <action selector="videoPlay:" destination="iN0-l3-epB" eventType="touchUpInside" id="1vu-da-YN3"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
