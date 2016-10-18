@@ -130,19 +130,29 @@
                 
                 [model addObject:topic];
                 
-                
-             //数据接收成功之后接收刷新
+                //数据接收成功之后接收刷新
                 [self.tableView.mj_header endRefreshing];
                 
             }
             self.Topics = model;
             
-    
+            //        NSLog(@"%@",self.Topics);
+            
+            
             self.maxtime = responseObject[@"info"][@"maxtime"];
-           
+//            NSLog(@"1maxtime = %@",self.maxtime);
             
             //数据接收成功后刷新数据.
             [self.tableView reloadData];
+            
+//            [responseObject writeToFile:@"/Users/admin/Desktop/Easypay/topicsNew.plist" atomically:YES];
+          
+//            NSLog(@"%@",responseObject);
+//            if ([responseObject[@"list"][@"videouri"] isKindOfClass:[NSString class]]) {
+//                NSLog(@"videouri -- %@",responseObject[@"list"][@"videouri"]);
+//            }
+            
+            
             
             //            self.page ++;
             

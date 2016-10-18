@@ -9,16 +9,13 @@
 #import "videoView.h"
 #import <UIImageView+WebCache.h>
 #import "WordTopics.h"
-#import <AVKit/AVPlayerViewController.h>
 #import <AVFoundation/AVPlayer.h>
-
+#import <AVKit/AVPlayerViewController.h>
 
 @interface videoView ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-
-//视频的URL
-@property (nonatomic,assign) NSString *videouri;
+@property (nonatomic,copy) NSString *videouri;
 
 @end
 
@@ -47,8 +44,8 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topics.image1]];
     
     self.videouri = topics.videouri;
-
-
+    
+    
 }
 
 //点击播放视频
@@ -65,6 +62,7 @@
     
     
 }
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

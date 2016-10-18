@@ -161,7 +161,7 @@
         
         self.videoView.frame = topic.videoFrame;
         self.videoView.topics = topic;
-    
+        
         self.videoView.hidden = NO;
         [self.pictureView removeFromSuperview];
         [self.voiceView removeFromSuperview];

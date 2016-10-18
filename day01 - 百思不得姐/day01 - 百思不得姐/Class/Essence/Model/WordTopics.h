@@ -85,10 +85,8 @@
 @property (nonatomic,assign) CGRect voiceFrame;
 @property (nonatomic,assign) CGRect videoFrame;
 
-
 //视频的URL
 @property (nonatomic,copy) NSString *videouri;
-@property (nonatomic,copy) NSString *videotime;
 
 //播放次数
 @property (nonatomic,copy) NSString *playcount;

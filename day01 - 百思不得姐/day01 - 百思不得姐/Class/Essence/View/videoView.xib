@@ -22,7 +22,7 @@
                     </constraints>
                     <state key="normal" image="video-play"/>
                     <connections>
-                        <action selector="videoPlay:" destination="iN0-l3-epB" eventType="touchUpInside" id="1vu-da-YN3"/>
+                        <action selector="videoPlay:" destination="iN0-l3-epB" eventType="touchUpInside" id="LOh-u2-lgh"/>
                     </connections>
                 </button>
             </subviews>
